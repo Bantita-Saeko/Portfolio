@@ -185,6 +185,10 @@ footer {
     background-color: var(--primary-color);
     color: var(--base-color-white);
     padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     .footer-container {
         display: flex;
         justify-content: space-between;
