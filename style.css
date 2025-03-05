@@ -1,7 +1,7 @@
 :root {
     --primary-color :#252422; 
     --secondary-color :#FFFCF2; 
-    --button-color :#f6d338; 
+    --button-color :#95ff00; 
     --background-color :#CCC5B9; 
     --font-color :#403D39; 
     --base-white-color :#ffffff; 
@@ -124,6 +124,64 @@ nav {
     }
 
 }
+/* Explore */
+.Explore {
+    position: relative;
+    width: 1;
+    height: 100vh;
+    background: url(img/2.png);
+    background-blend-mode: darken;
+    overflow: hidden;
+
+    background-color: #372f2f4c;
+
+    .explore-content {
+        /* border: 1px solid red; */
+        width: 1200px;
+        margin: 0 auto;
+        .sentence {
+            margin : 200px 20px;
+            color: var(--base-white-color);
+            width: 650px;
+            h1 {
+                font-size: 64px;
+                color: var(--button-color);
+                text-shadow: 2px 2px 2px black;
+
+            }
+            h3 {
+
+            }
+            p {
+
+            }
+        }
+        .btn-outline {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: var(--button-color);
+            border: 1px solid var(--base-black-color);
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
+            cursor: pointer;
+            transition: all 0.5s ease;
+            a {
+                color: var(--base-black-color);
+                text-decoration: none;
+            }
+        }
+        .btn-outline:hover {
+            background-color: var(--base-black-color);
+            color: var(--base-white-color);
+            a {
+                color: var(--base-white-color);
+            }
+        }
+
+
+    }
+}
+
 
 
 /* Content */
@@ -139,7 +197,7 @@ nav {
     }
     .left-side {
         /* border: 1px solid greenyellow; */
-        width: 40%;
+        width: 50%;
         text-align: center;
         align-self: center;
         img {
@@ -151,7 +209,7 @@ nav {
         }
     }
     .right-side {
-        width: 60%;
+        width: 50%;
         /* border: 1px solid blue; */
         align-self: center;
         h3 {
@@ -363,12 +421,20 @@ footer {
             }
         }
     }
+    .Explore {
+        .explore-content {
+            justify-content: center;
+            .sentence {
+                width: 500px;
+            }
+        }
+    }
 
     .Hero-section {
         .main-card {
             justify-items: center;
             grid-template-columns: repeat(2,1fr);
-            padding: 20px 0 50px 0;
+            padding: 0px 0 30px 0;
         }
     }
 
